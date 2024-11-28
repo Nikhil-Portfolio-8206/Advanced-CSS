@@ -40,13 +40,37 @@ p {
 /* ****************************************** class************************ */
 
 .head {
-    background-color: #73a59c;
+    /* background-color: #73a59c; */
+    padding-bottom: 50px;
 
+    /* display: flex; */
+    background: linear-gradient(135deg, #ff7eb3, #ff758c, #ffc46b, #fff6a9);
+    background-size: 300% 300%;
+    /* Large size for smooth animation */
+    animation: gradient-motion 15s ease infinite;
+    /* Infinite animation */
+}
 
+@keyframes gradient-motion {
+    0% {
+        background-position: 0% 50%;
+        /* Start position */
+    }
+
+    50% {
+        background-position: 100% 50%;
+        /* Midway position */
+    }
+
+    100% {
+        background-position: 0% 50%;
+        /* Loop back to start */
+    }
 }
 
 .middle-container {
-    background-color: red;
+    background-color: rgb(213, 221, 98);
+    padding-top: 20px;
 
 }
 
@@ -79,4 +103,33 @@ p {
     border-radius: 20px;
     border: 10px solid #f3f3f3;
     border-color: aqua;
+}
+
+.imgborder {
+    border: 5px solid rgb(24, 21, 21);
+    /* Black border */
+    border-radius: 100%;
+    /* Rounded corners */
+}
+
+.slide-hr {
+    width: 0;
+    height: 3px;
+    background: #2196f3;
+    /* Base color */
+    border: none;
+    margin: 20px auto;
+    animation: slide-in 2s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        width: 0;
+        background: #2196f3;
+    }
+
+    100% {
+        width: 100%;
+        background: #42a5f5;
+    }
 }

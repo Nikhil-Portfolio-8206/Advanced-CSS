@@ -75,7 +75,7 @@ p {
 .middle-container {
     background-color: rgb(213, 221, 98);
     padding-top: 20px;
-
+    
 
 }
 
@@ -123,7 +123,8 @@ p {
     border-radius: 100%;
     /* Rounded corners */
     position: relative;
-    right: 450px;
+    right: 500px;
+    bottom: 35px;
     display: inline-block;
     height: 288px;
     width: 288px;
@@ -153,22 +154,22 @@ p {
 
 .h2shift1 {
     position: relative;
-    top: 80px;
-    right: 90px;
+    top: 10px;
+    right: 100px;
     display: inline-block;
     font-weight: 800;
     text-decoration: underline;
 }
 
 .p2 {
-    position: relative;
-    left: 100px;
-    bottom: 210px;
+    position: absolute;
+    left: 400px;
+    top: 77rem;
     width:80%;
     /* Takes 80% of its parent container */
-    max-width: 600px;
+    max-width: 800px;
     /* Prevents it from getting too wide */
-    margin: 0 auto;
+    margin: 0 20px auto;
     /* Centers the paragraph */
     font-size: 1.1rem;
     /* Default font size */
